@@ -1,0 +1,734 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D3
+U 1 1 609990D7
+P 4150 1400
+F 0 "D3" H 4143 1616 50  0000 C CNN
+F 1 "LED" H 4143 1525 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 4150 1400 50  0001 C CNN
+F 3 "~" H 4150 1400 50  0001 C CNN
+	1    4150 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+48V #PWR01
+U 1 1 6099ACA7
+P 650 1200
+F 0 "#PWR01" H 650 1050 50  0001 C CNN
+F 1 "+48V" H 665 1373 50  0000 C CNN
+F 2 "" H 650 1200 50  0001 C CNN
+F 3 "" H 650 1200 50  0001 C CNN
+	1    650  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 6099B12C
+P 950 1600
+F 0 "R1" V 754 1600 50  0000 C CNN
+F 1 "R_Small" V 845 1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 950 1600 50  0001 C CNN
+F 3 "~" H 950 1600 50  0001 C CNN
+	1    950  1600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 6099BCA4
+P 3800 1400
+F 0 "R2" H 3859 1446 50  0000 L CNN
+F 1 "R_Small" H 3859 1355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3800 1400 50  0001 C CNN
+F 3 "~" H 3800 1400 50  0001 C CNN
+	1    3800 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	650  1200 650  1600
+Wire Wire Line
+	650  1600 850  1600
+$Comp
+L power:GND #PWR02
+U 1 1 609AE625
+P 1250 2000
+F 0 "#PWR02" H 1250 1750 50  0001 C CNN
+F 1 "GND" H 1255 1827 50  0000 C CNN
+F 2 "" H 1250 2000 50  0001 C CNN
+F 3 "" H 1250 2000 50  0001 C CNN
+	1    1250 2000
+	1    0    0    -1  
+$EndComp
+Text Label 2050 1600 2    50   ~ 0
+SiPM_1
+Wire Wire Line
+	1700 1600 2050 1600
+$Comp
+L Sensor_Optical:S13360-3050CS D1
+U 1 1 60999950
+P 1550 1600
+F 0 "D1" H 1550 1895 50  0000 C CNN
+F 1 "S13360-3050CS" H 1550 1804 50  0000 C CNN
+F 2 "gbtx-testboard:POGO" H 1600 1775 50  0001 C CNN
+F 3 "http://www.hamamatsu.com/resources/pdf/ssd/s13360_series_kapd1052e.pdf" H 1550 1350 50  0001 C CNN
+	1    1550 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 2600 2050 2600
+Text Label 2050 2600 2    50   ~ 0
+SiPM_2
+$Comp
+L Device:C_Small C1
+U 1 1 6099B550
+P 1250 1800
+F 0 "C1" H 1342 1846 50  0000 L CNN
+F 1 "C_Small" H 1342 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1250 1800 50  0001 C CNN
+F 3 "~" H 1250 1800 50  0001 C CNN
+	1    1250 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 1600 1250 1600
+Wire Wire Line
+	1250 1700 1250 1600
+Connection ~ 1250 1600
+Wire Wire Line
+	1250 1600 1400 1600
+Wire Wire Line
+	1250 2000 1250 1900
+$Comp
+L Device:R_Small R4
+U 1 1 609DFC1A
+P 950 2600
+F 0 "R4" V 754 2600 50  0000 C CNN
+F 1 "R_Small" V 845 2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 950 2600 50  0001 C CNN
+F 3 "~" H 950 2600 50  0001 C CNN
+	1    950  2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	650  2600 850  2600
+$Comp
+L power:GND #PWR03
+U 1 1 609DFC21
+P 1250 3000
+F 0 "#PWR03" H 1250 2750 50  0001 C CNN
+F 1 "GND" H 1255 2827 50  0000 C CNN
+F 2 "" H 1250 3000 50  0001 C CNN
+F 3 "" H 1250 3000 50  0001 C CNN
+	1    1250 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor_Optical:S13360-3050CS D2
+U 1 1 609DFC27
+P 1550 2600
+F 0 "D2" H 1550 2895 50  0000 C CNN
+F 1 "S13360-3050CS" H 1550 2804 50  0000 C CNN
+F 2 "gbtx-testboard:POGO" H 1600 2775 50  0001 C CNN
+F 3 "http://www.hamamatsu.com/resources/pdf/ssd/s13360_series_kapd1052e.pdf" H 1550 2350 50  0001 C CNN
+	1    1550 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 609DFC2D
+P 1250 2800
+F 0 "C2" H 1342 2846 50  0000 L CNN
+F 1 "C_Small" H 1342 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1250 2800 50  0001 C CNN
+F 3 "~" H 1250 2800 50  0001 C CNN
+	1    1250 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2600 1250 2600
+Wire Wire Line
+	1250 2700 1250 2600
+Connection ~ 1250 2600
+Wire Wire Line
+	1250 2600 1400 2600
+Wire Wire Line
+	1250 3000 1250 2900
+$Comp
+L power:GND #PWR07
+U 1 1 609E222E
+P 650 3000
+F 0 "#PWR07" H 650 2750 50  0001 C CNN
+F 1 "GND" H 655 2827 50  0000 C CNN
+F 2 "" H 650 3000 50  0001 C CNN
+F 3 "" H 650 3000 50  0001 C CNN
+	1    650  3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 609E223A
+P 650 2800
+F 0 "C4" H 742 2846 50  0000 L CNN
+F 1 "C_Small" H 742 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 650 2800 50  0001 C CNN
+F 3 "~" H 650 2800 50  0001 C CNN
+	1    650  2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	650  3000 650  2900
+Wire Wire Line
+	650  1600 650  2600
+Connection ~ 650  1600
+Text Notes 650  800  0    89   ~ 0
+SiPM Bias
+$Comp
+L gbtx:FDFMA3N109 U1
+U 1 1 60A00555
+P 4900 1200
+F 0 "U1" H 4775 1465 50  0000 C CNN
+F 1 "FDFMA3N109" H 4775 1374 50  0000 C CNN
+F 2 "gbtx-testboard:FDFMA3N109" H 4900 1200 50  0001 C CNN
+F 3 "" H 4900 1200 50  0001 C CNN
+	1    4900 1200
+	1    0    0    -1  
+$EndComp
+Text Label 7750 2250 0    50   ~ 0
+5V
+Wire Wire Line
+	4300 1400 4450 1400
+Text Label 5400 1300 2    50   ~ 0
+LED_ON
+Wire Wire Line
+	5400 1300 5100 1300
+$Comp
+L power:GND #PWR08
+U 1 1 60A17AB5
+P 5150 1600
+F 0 "#PWR08" H 5150 1350 50  0001 C CNN
+F 1 "GND" H 5155 1427 50  0000 C CNN
+F 2 "" H 5150 1600 50  0001 C CNN
+F 3 "" H 5150 1600 50  0001 C CNN
+	1    5150 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 1600 5150 1400
+Wire Wire Line
+	5150 1400 5100 1400
+NoConn ~ 4450 1200
+NoConn ~ 4450 1300
+NoConn ~ 5100 1200
+Text Label 3500 1400 0    50   ~ 0
+5V
+Text Label 7750 1350 0    50   ~ 0
+HV
+Text Notes 3850 800  0    89   ~ 0
+LED MOSFET
+Wire Wire Line
+	3500 1400 3700 1400
+Wire Wire Line
+	650  2600 650  2700
+Connection ~ 650  2600
+Text Notes 7900 1250 0    89   ~ 0
+Conn
+$Comp
+L Amplifier_Operational:OPA1602 U?
+U 1 1 60DCAB38
+P 3050 4200
+F 0 "U?" H 3050 4567 50  0000 C CNN
+F 1 "OPA1602" H 3050 4476 50  0000 C CNN
+F 2 "" H 3050 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa1604.pdf" H 3050 4200 50  0001 C CNN
+	1    3050 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA1602 U?
+U 1 1 60DCB19C
+P 4350 5600
+F 0 "U?" H 4350 5233 50  0000 C CNN
+F 1 "OPA1602" H 4350 5324 50  0000 C CNN
+F 2 "" H 4350 5600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa1604.pdf" H 4350 5600 50  0001 C CNN
+	1    4350 5600
+	1    0    0    1   
+$EndComp
+Text Label 2200 4100 0    50   ~ 0
+SiPM_1
+$Comp
+L Device:R_Small R?
+U 1 1 60DF5A12
+P 3600 5500
+F 0 "R?" V 3404 5500 50  0000 C CNN
+F 1 "R_Small" V 3495 5500 50  0000 C CNN
+F 2 "" H 3600 5500 50  0001 C CNN
+F 3 "~" H 3600 5500 50  0001 C CNN
+	1    3600 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60DF5F41
+P 4300 5100
+F 0 "R?" V 4104 5100 50  0000 C CNN
+F 1 "R_Small" V 4195 5100 50  0000 C CNN
+F 2 "" H 4300 5100 50  0001 C CNN
+F 3 "~" H 4300 5100 50  0001 C CNN
+	1    4300 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 5100 4650 5100
+Wire Wire Line
+	4650 5100 4650 5600
+$Comp
+L Device:R_Small R?
+U 1 1 60DFE074
+P 3050 3350
+F 0 "R?" V 2854 3350 50  0000 C CNN
+F 1 "R_Small" V 2945 3350 50  0000 C CNN
+F 2 "" H 3050 3350 50  0001 C CNN
+F 3 "~" H 3050 3350 50  0001 C CNN
+	1    3050 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60E00AAD
+P 3050 3700
+F 0 "C?" V 2821 3700 50  0000 C CNN
+F 1 "C_Small" V 2912 3700 50  0000 C CNN
+F 2 "" H 3050 3700 50  0001 C CNN
+F 3 "~" H 3050 3700 50  0001 C CNN
+	1    3050 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 4100 2650 4100
+Wire Wire Line
+	2650 4100 2650 3700
+Wire Wire Line
+	2650 3700 2950 3700
+Connection ~ 2650 4100
+Wire Wire Line
+	2650 4100 2750 4100
+Wire Wire Line
+	3150 3700 3350 3700
+Wire Wire Line
+	3350 3700 3350 4200
+Wire Wire Line
+	2950 3350 2650 3350
+Wire Wire Line
+	2650 3350 2650 3700
+Connection ~ 2650 3700
+Wire Wire Line
+	3150 3350 3350 3350
+Wire Wire Line
+	3350 3350 3350 3700
+Connection ~ 3350 3700
+Connection ~ 3350 4200
+Text Label 5150 4300 2    50   ~ 0
+SiPM_1_N
+Wire Wire Line
+	5150 4300 4650 4300
+Text Label 5100 5600 2    50   ~ 0
+SiPM_1_P
+Wire Wire Line
+	5100 5600 4650 5600
+Connection ~ 4650 5600
+$Comp
+L power:GND #PWR?
+U 1 1 60E25C46
+P 2650 4550
+F 0 "#PWR?" H 2650 4300 50  0001 C CNN
+F 1 "GND" H 2655 4377 50  0000 C CNN
+F 2 "" H 2650 4550 50  0001 C CNN
+F 3 "" H 2650 4550 50  0001 C CNN
+	1    2650 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4550 2650 4300
+Wire Wire Line
+	2650 4300 2750 4300
+$Comp
+L power:GND #PWR?
+U 1 1 60E28826
+P 3950 5900
+F 0 "#PWR?" H 3950 5650 50  0001 C CNN
+F 1 "GND" H 3955 5727 50  0000 C CNN
+F 2 "" H 3950 5900 50  0001 C CNN
+F 3 "" H 3950 5900 50  0001 C CNN
+	1    3950 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 5900 3950 5700
+Wire Wire Line
+	3950 5700 4050 5700
+Wire Wire Line
+	3950 5500 3950 5100
+Wire Wire Line
+	3950 5100 4200 5100
+Connection ~ 3950 5500
+Wire Wire Line
+	3950 5500 4050 5500
+$Comp
+L Amplifier_Operational:OPA1602 U?
+U 1 1 60E75E00
+P 4350 4300
+F 0 "U?" H 4350 4667 50  0000 C CNN
+F 1 "OPA1602" H 4350 4576 50  0000 C CNN
+F 2 "" H 4350 4300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa1604.pdf" H 4350 4300 50  0001 C CNN
+	1    4350 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5500 3500 5500
+Wire Wire Line
+	3350 4200 3350 5500
+$Comp
+L Device:R_Small R?
+U 1 1 60EA2BCE
+P 3600 4200
+F 0 "R?" V 3404 4200 50  0000 C CNN
+F 1 "R_Small" V 3495 4200 50  0000 C CNN
+F 2 "" H 3600 4200 50  0001 C CNN
+F 3 "~" H 3600 4200 50  0001 C CNN
+	1    3600 4200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60EA31E8
+P 4250 3700
+F 0 "R?" V 4054 3700 50  0000 C CNN
+F 1 "R_Small" V 4145 3700 50  0000 C CNN
+F 2 "" H 4250 3700 50  0001 C CNN
+F 3 "~" H 4250 3700 50  0001 C CNN
+	1    4250 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 4300 4650 3700
+Wire Wire Line
+	4650 3700 4350 3700
+Connection ~ 4650 4300
+Wire Wire Line
+	3350 4200 3500 4200
+$Comp
+L power:GND #PWR?
+U 1 1 60EAC196
+P 3950 4600
+F 0 "#PWR?" H 3950 4350 50  0001 C CNN
+F 1 "GND" H 3955 4427 50  0000 C CNN
+F 2 "" H 3950 4600 50  0001 C CNN
+F 3 "" H 3950 4600 50  0001 C CNN
+	1    3950 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4600 3950 4400
+Wire Wire Line
+	3950 4400 4050 4400
+Wire Wire Line
+	3950 4200 3950 3700
+Wire Wire Line
+	3950 3700 4150 3700
+Connection ~ 3950 4200
+Wire Wire Line
+	3950 4200 4050 4200
+Wire Wire Line
+	3700 4200 3950 4200
+Wire Wire Line
+	3700 5500 3950 5500
+$Comp
+L Amplifier_Operational:OPA1602 U?
+U 1 1 60EC5861
+P 6350 4250
+F 0 "U?" H 6350 4617 50  0000 C CNN
+F 1 "OPA1602" H 6350 4526 50  0000 C CNN
+F 2 "" H 6350 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa1604.pdf" H 6350 4250 50  0001 C CNN
+	1    6350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA1602 U?
+U 1 1 60EC5867
+P 7650 5650
+F 0 "U?" H 7650 5283 50  0000 C CNN
+F 1 "OPA1602" H 7650 5374 50  0000 C CNN
+F 2 "" H 7650 5650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa1604.pdf" H 7650 5650 50  0001 C CNN
+	1    7650 5650
+	1    0    0    1   
+$EndComp
+Text Label 5500 4150 0    50   ~ 0
+SiPM_2
+$Comp
+L Device:R_Small R?
+U 1 1 60EC586E
+P 6900 5550
+F 0 "R?" V 6704 5550 50  0000 C CNN
+F 1 "R_Small" V 6795 5550 50  0000 C CNN
+F 2 "" H 6900 5550 50  0001 C CNN
+F 3 "~" H 6900 5550 50  0001 C CNN
+	1    6900 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60EC5874
+P 7600 5150
+F 0 "R?" V 7404 5150 50  0000 C CNN
+F 1 "R_Small" V 7495 5150 50  0000 C CNN
+F 2 "" H 7600 5150 50  0001 C CNN
+F 3 "~" H 7600 5150 50  0001 C CNN
+	1    7600 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7700 5150 7950 5150
+Wire Wire Line
+	7950 5150 7950 5650
+$Comp
+L Device:R_Small R?
+U 1 1 60EC587C
+P 6350 3400
+F 0 "R?" V 6154 3400 50  0000 C CNN
+F 1 "R_Small" V 6245 3400 50  0000 C CNN
+F 2 "" H 6350 3400 50  0001 C CNN
+F 3 "~" H 6350 3400 50  0001 C CNN
+	1    6350 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 60EC5882
+P 6350 3750
+F 0 "C?" V 6121 3750 50  0000 C CNN
+F 1 "C_Small" V 6212 3750 50  0000 C CNN
+F 2 "" H 6350 3750 50  0001 C CNN
+F 3 "~" H 6350 3750 50  0001 C CNN
+	1    6350 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 4150 5950 4150
+Wire Wire Line
+	5950 4150 5950 3750
+Wire Wire Line
+	5950 3750 6250 3750
+Connection ~ 5950 4150
+Wire Wire Line
+	5950 4150 6050 4150
+Wire Wire Line
+	6450 3750 6650 3750
+Wire Wire Line
+	6650 3750 6650 4250
+Wire Wire Line
+	6250 3400 5950 3400
+Wire Wire Line
+	5950 3400 5950 3750
+Connection ~ 5950 3750
+Wire Wire Line
+	6450 3400 6650 3400
+Wire Wire Line
+	6650 3400 6650 3750
+Connection ~ 6650 3750
+Connection ~ 6650 4250
+Text Label 8450 4350 2    50   ~ 0
+SiPM_2_N
+Wire Wire Line
+	8450 4350 7950 4350
+Text Label 8400 5650 2    50   ~ 0
+SiPM_2_P
+Wire Wire Line
+	8400 5650 7950 5650
+Connection ~ 7950 5650
+$Comp
+L power:GND #PWR?
+U 1 1 60EC589B
+P 5950 4600
+F 0 "#PWR?" H 5950 4350 50  0001 C CNN
+F 1 "GND" H 5955 4427 50  0000 C CNN
+F 2 "" H 5950 4600 50  0001 C CNN
+F 3 "" H 5950 4600 50  0001 C CNN
+	1    5950 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4600 5950 4350
+Wire Wire Line
+	5950 4350 6050 4350
+$Comp
+L power:GND #PWR?
+U 1 1 60EC58A3
+P 7250 5950
+F 0 "#PWR?" H 7250 5700 50  0001 C CNN
+F 1 "GND" H 7255 5777 50  0000 C CNN
+F 2 "" H 7250 5950 50  0001 C CNN
+F 3 "" H 7250 5950 50  0001 C CNN
+	1    7250 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 5950 7250 5750
+Wire Wire Line
+	7250 5750 7350 5750
+Wire Wire Line
+	7250 5550 7250 5150
+Wire Wire Line
+	7250 5150 7500 5150
+Connection ~ 7250 5550
+Wire Wire Line
+	7250 5550 7350 5550
+$Comp
+L Amplifier_Operational:OPA1602 U?
+U 1 1 60EC58AF
+P 7650 4350
+F 0 "U?" H 7650 4717 50  0000 C CNN
+F 1 "OPA1602" H 7650 4626 50  0000 C CNN
+F 2 "" H 7650 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa1604.pdf" H 7650 4350 50  0001 C CNN
+	1    7650 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 5550 6800 5550
+Wire Wire Line
+	6650 4250 6650 5550
+$Comp
+L Device:R_Small R?
+U 1 1 60EC58B7
+P 6900 4250
+F 0 "R?" V 6704 4250 50  0000 C CNN
+F 1 "R_Small" V 6795 4250 50  0000 C CNN
+F 2 "" H 6900 4250 50  0001 C CNN
+F 3 "~" H 6900 4250 50  0001 C CNN
+	1    6900 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60EC58BD
+P 7550 3750
+F 0 "R?" V 7354 3750 50  0000 C CNN
+F 1 "R_Small" V 7445 3750 50  0000 C CNN
+F 2 "" H 7550 3750 50  0001 C CNN
+F 3 "~" H 7550 3750 50  0001 C CNN
+	1    7550 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 4350 7950 3750
+Wire Wire Line
+	7950 3750 7650 3750
+Connection ~ 7950 4350
+Wire Wire Line
+	6650 4250 6800 4250
+$Comp
+L power:GND #PWR?
+U 1 1 60EC58C7
+P 7250 4650
+F 0 "#PWR?" H 7250 4400 50  0001 C CNN
+F 1 "GND" H 7255 4477 50  0000 C CNN
+F 2 "" H 7250 4650 50  0001 C CNN
+F 3 "" H 7250 4650 50  0001 C CNN
+	1    7250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4650 7250 4450
+Wire Wire Line
+	7250 4450 7350 4450
+Wire Wire Line
+	7250 4250 7250 3750
+Wire Wire Line
+	7250 3750 7450 3750
+Connection ~ 7250 4250
+Wire Wire Line
+	7250 4250 7350 4250
+Wire Wire Line
+	7000 4250 7250 4250
+Wire Wire Line
+	7000 5550 7250 5550
+Text Label 7750 1550 0    50   ~ 0
+SIPM_1_P
+Text Label 7750 1650 0    50   ~ 0
+SIPM_1_N
+Text Label 7750 1850 0    50   ~ 0
+SIPM_2_P
+Text Label 7750 1950 0    50   ~ 0
+SIPM_2_N
+Wire Wire Line
+	7750 1550 8300 1550
+Wire Wire Line
+	7750 1650 8300 1650
+$Comp
+L Connector:Conn_01x10_Female J?
+U 1 1 60EE8D71
+P 8500 1750
+F 0 "J?" H 8528 1726 50  0000 L CNN
+F 1 "Conn_01x10_Female" H 8528 1635 50  0000 L CNN
+F 2 "" H 8500 1750 50  0001 C CNN
+F 3 "~" H 8500 1750 50  0001 C CNN
+	1    8500 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2250 8300 2250
+Wire Wire Line
+	7750 1950 8300 1950
+Wire Wire Line
+	7750 1850 8300 1850
+Wire Wire Line
+	7750 1350 8300 1350
+Text Label 7750 2150 0    50   ~ 0
+LED_ON
+Wire Wire Line
+	7750 2150 8300 2150
+Wire Wire Line
+	3900 1400 4000 1400
+$Comp
+L power:GND #PWR?
+U 1 1 60F0F6D6
+P 8200 2400
+F 0 "#PWR?" H 8200 2150 50  0001 C CNN
+F 1 "GND" H 8205 2227 50  0000 C CNN
+F 2 "" H 8200 2400 50  0001 C CNN
+F 3 "" H 8200 2400 50  0001 C CNN
+	1    8200 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 2400 8200 2050
+Wire Wire Line
+	8200 2050 8300 2050
+Wire Wire Line
+	8200 2050 8200 1750
+Wire Wire Line
+	8200 1750 8300 1750
+Connection ~ 8200 2050
+Wire Wire Line
+	8200 1750 8200 1450
+Wire Wire Line
+	8200 1450 8300 1450
+Connection ~ 8200 1750
+$EndSCHEMATC
