@@ -1,0 +1,250 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L pspice:R R4
+U 1 1 61542DFC
+P 3300 3600
+F 0 "R4" V 3095 3600 50  0000 C CNN
+F 1 "100k" V 3186 3600 50  0000 C CNN
+F 2 "" H 3300 3600 50  0001 C CNN
+F 3 "~" H 3300 3600 50  0001 C CNN
+	1    3300 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:0 #GND02
+U 1 1 61543CFE
+P 1150 4750
+F 0 "#GND02" H 1150 4650 50  0001 C CNN
+F 1 "0" H 1150 4839 50  0000 C CNN
+F 2 "" H 1150 4750 50  0001 C CNN
+F 3 "~" H 1150 4750 50  0001 C CNN
+	1    1150 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:OPA846xD U1
+U 1 1 6154A659
+P 4250 2400
+F 0 "U1" H 4350 2300 50  0000 L CNN
+F 1 "OPA846xD" H 4300 2200 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4150 2200 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa846.pdf" H 4400 2550 50  0001 C CNN
+F 4 "M" H 4250 2400 50  0001 C CNN "Spice_Primitive"
+F 5 "OPA846" H 4250 2400 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4250 2400 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/home/kdunne/git/OPA846.LIB" H 4250 2400 50  0001 C CNN "Spice_Lib_File"
+	1    4250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:R R3
+U 1 1 6155501C
+P 2450 2600
+F 0 "R3" V 2245 2600 50  0000 C CNN
+F 1 "10k" V 2336 2600 50  0000 C CNN
+F 2 "" H 2450 2600 50  0001 C CNN
+F 3 "~" H 2450 2600 50  0001 C CNN
+	1    2450 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:R R2
+U 1 1 6155525C
+P 2450 1950
+F 0 "R2" V 2245 1950 50  0000 C CNN
+F 1 "10k" V 2336 1950 50  0000 C CNN
+F 2 "" H 2450 1950 50  0001 C CNN
+F 3 "~" H 2450 1950 50  0001 C CNN
+	1    2450 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L pspice:R R5
+U 1 1 61558873
+P 4200 3600
+F 0 "R5" V 3995 3600 50  0000 C CNN
+F 1 "10k" V 4086 3600 50  0000 C CNN
+F 2 "" H 4200 3600 50  0001 C CNN
+F 3 "~" H 4200 3600 50  0001 C CNN
+	1    4200 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:VSOURCE V2
+U 1 1 61559369
+P 3700 1400
+F 0 "V2" V 3197 1400 50  0000 C CNN
+F 1 "5V" V 3288 1400 50  0000 C CNN
+F 2 "" H 3700 1400 50  0001 C CNN
+F 3 "~" H 3700 1400 50  0001 C CNN
+	1    3700 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2450 1650 2450 1700
+$Comp
+L pspice:R R1
+U 1 1 61568290
+P 1400 3600
+F 0 "R1" V 1195 3600 50  0000 C CNN
+F 1 "50" V 1286 3600 50  0000 C CNN
+F 2 "" H 1400 3600 50  0001 C CNN
+F 3 "~" H 1400 3600 50  0001 C CNN
+	1    1400 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L pspice:0 #GND01
+U 1 1 6156ED13
+P 1800 3050
+F 0 "#GND01" H 1800 2950 50  0001 C CNN
+F 1 "0" H 1800 3139 50  0000 C CNN
+F 2 "" H 1800 3050 50  0001 C CNN
+F 3 "~" H 1800 3050 50  0001 C CNN
+	1    1800 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:C C1
+U 1 1 61542A96
+P 1800 2650
+F 0 "C1" H 1978 2696 50  0000 L CNN
+F 1 ".01u" H 1978 2605 50  0000 L CNN
+F 2 "" H 1800 2650 50  0001 C CNN
+F 3 "~" H 1800 2650 50  0001 C CNN
+	1    1800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:0 #GND03
+U 1 1 615749BB
+P 2450 3050
+F 0 "#GND03" H 2450 2950 50  0001 C CNN
+F 1 "0" H 2450 3139 50  0000 C CNN
+F 2 "" H 2450 3050 50  0001 C CNN
+F 3 "~" H 2450 3050 50  0001 C CNN
+	1    2450 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3050 2450 2850
+Wire Wire Line
+	1800 3050 1800 2900
+Wire Wire Line
+	3750 2500 3950 2500
+$Comp
+L pspice:0 #GND04
+U 1 1 61578A3E
+P 3100 1400
+F 0 "#GND04" H 3100 1300 50  0001 C CNN
+F 1 "0" H 3100 1489 50  0000 C CNN
+F 2 "" H 3100 1400 50  0001 C CNN
+F 3 "~" H 3100 1400 50  0001 C CNN
+	1    3100 1400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3100 1400 3400 1400
+Text GLabel 1900 3600 1    50   Input ~ 0
+in
+$Comp
+L pspice:C C2
+U 1 1 61554773
+P 2450 3600
+F 0 "C2" V 2135 3600 50  0000 C CNN
+F 1 "47u" V 2226 3600 50  0000 C CNN
+F 2 "" H 2450 3600 50  0001 C CNN
+F 3 "~" H 2450 3600 50  0001 C CNN
+	1    2450 3600
+	0    1    1    0   
+$EndComp
+Text GLabel 4800 2400 2    50   Output ~ 0
+out
+$Comp
+L Simulation_SPICE:VEXP V1
+U 1 1 6158A29E
+P 1150 4200
+F 0 "V1" H 1280 4291 50  0000 L CNN
+F 1 "VEXP" H 1280 4200 50  0000 L CNN
+F 2 "" H 1150 4200 50  0001 C CNN
+F 3 "~" H 1150 4200 50  0001 C CNN
+F 4 "Y" H 1150 4200 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 1150 4200 50  0001 L CNN "Spice_Primitive"
+F 6 "exp(0 1 1n 1n 1n 1)" H 1280 4109 50  0000 L CNN "Spice_Model"
+	1    1150 4200
+	1    0    0    -1  
+$EndComp
+Text Notes 4800 2250 0    89   ~ 0
+Vout = Vcc / 2 - VI(RF/RG)
+Wire Wire Line
+	4150 2700 4150 3000
+Wire Wire Line
+	1150 4400 1150 4750
+Wire Wire Line
+	1150 3600 1150 4000
+Wire Wire Line
+	1650 3600 2200 3600
+Wire Wire Line
+	2700 3600 3050 3600
+Wire Wire Line
+	4750 2400 4550 2400
+Wire Wire Line
+	4800 2400 4750 2400
+Connection ~ 4750 2400
+Wire Wire Line
+	4750 2400 4750 3600
+Wire Wire Line
+	4450 3600 4750 3600
+Wire Wire Line
+	3750 3600 3950 3600
+Wire Wire Line
+	3550 3600 3750 3600
+Connection ~ 3750 3600
+Wire Wire Line
+	3750 2500 3750 3600
+$Comp
+L pspice:0 #GND05
+U 1 1 615627A2
+P 4150 3000
+F 0 "#GND05" H 4150 2900 50  0001 C CNN
+F 1 "0" H 4150 3089 50  0000 C CNN
+F 2 "" H 4150 3000 50  0001 C CNN
+F 3 "~" H 4150 3000 50  0001 C CNN
+	1    4150 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2400 1800 2300
+Wire Wire Line
+	4000 1400 4150 1400
+Wire Wire Line
+	4150 1650 4150 2100
+Wire Wire Line
+	4150 1400 4150 1650
+Connection ~ 4150 1650
+Wire Wire Line
+	4150 1650 2450 1650
+Wire Wire Line
+	2450 2300 2450 2350
+Wire Wire Line
+	2450 2200 2450 2300
+Connection ~ 2450 2300
+Wire Wire Line
+	3950 2300 2450 2300
+Wire Wire Line
+	1800 2300 2450 2300
+$EndSCHEMATC
